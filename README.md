@@ -1,5 +1,5 @@
 *project description
-A book tracking app that allows you to search for books and add them to three different shelves (currently reading,want to read,read)
+A book tracking app that allows you to search for books and add them to three different shelves (currently reading ,want to read ,read)
 
 *planning for the project
 1-break every view into a hierarchy of components
@@ -12,8 +12,8 @@ A book tracking app that allows you to search for books and add them to three di
 6-I checked everything to make sure they work properly
 7-I separated components to simplify the code
 
-*lanching the app
-inside the teminal in the code editor I used the following commands in the same order
+*launching the app
+inside the terminal in the code editor I used the following commands in the same order
 1-npm init
 2-npm install --global yarn
 3-npm install -g create-react-app
@@ -21,4 +21,4 @@ inside the teminal in the code editor I used the following commands in the same 
 5-npm install throttle-debounce
 6-yarn add react-scripts
 7-yarn start
- the project automatically opened in rhe web browser using a local host
+ the project automatically opened in the web browser using a localhost
