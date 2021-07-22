@@ -1,18 +1,16 @@
 import React, { Component } from 'react'
 
-class BookShelfChanger extends React.Component{
+const BookShelfChanger=props=>{
 
- handleChange=(event)=>{
-   this.props.changeShelf(this.props.book,event.target.value);
+const handleChange=(event)=>{
+   props.changeShelf(props.book,event.target.value);
  }
-
-  render(){
-   const {shelfKey}=this.props;
-    const currentShelf=shelfKey?shelfKey:"none"
-    console.log(currentShelf)
-    return(
+ const {shelfKey}=props;
+ const currentShelf=shelfKey?shelfKey:"none"
+ console.log(currentShelf)
+ return(
       <div className="book-shelf-changer">
-        <select defaultValue={currentShelf} onChange={this.handleChange} >
+        <select defaultValue={currentShelf} onChange={handleChange} >
           <option value="move" disabled>Move to...</option>
           <option value="currentlyReading">Currently Reading</option>
           <option value="wantToRead">Want to Read</option>
@@ -21,6 +19,6 @@ class BookShelfChanger extends React.Component{
         </select>
       </div>
     )
-}}
+}
 
 export default BookShelfChanger
