@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import Book from './Book'
 
-class BookShelf extends React.Component{
-  render(){
-    const {title,books,shelfKey,changeShelf}=this.props;
-
-    return(
+const BookShelf =props=>{
+  const {title,books,shelfKey,changeShelf}=props;
+  return(
       <div className="bookshelf">
         <h2 className="bookshelf-title">{title}</h2>
         <div className="bookshelf-books">
@@ -15,6 +13,7 @@ class BookShelf extends React.Component{
         </div>
       </div>
     );
-}}
+}
 
 export default BookShelf
+
